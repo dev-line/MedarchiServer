@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sous_options",
+  "info": {
+    "name": "Sous Options"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Price": {
+      "type": "float",
+      "required": true
+    },
+    "Option": {
+      "via": "SousOptions",
+      "model": "options"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "name": "Settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "SiteName": {
+      "type": "string",
+      "required": true,
+      "default": "Portfolio"
+    },
+    "SiteDescription": {
+      "type": "string",
+      "default": "Somthing Here"
+    },
+    "SiteStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Enable",
+        "Disable"
+      ],
+      "required": true,
+      "default": "Enable"
+    },
+    "HomeTitle": {
+      "type": "string"
+    },
+    "HomeSubTitle": {
+      "type": "string"
+    },
+    "HomeBg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

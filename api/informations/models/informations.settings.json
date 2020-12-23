@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "informations",
+  "info": {
+    "name": "Informations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "AboutMe": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "Youtube": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "integer"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "LinkedIn": {
+      "type": "string"
+    }
+  }
+}
